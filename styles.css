@@ -29,4 +29,6 @@ textarea{
 
 #translated-output{
     margin-top: 0rem;
+    min-height: 10vh;
+    overflow: scroll;
 }
