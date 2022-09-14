@@ -4,46 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Banana Speak</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="main-container">
-        <nav>
-            <div class="container container-center">
-               <h1>
-                    Talk in Minionese
-               </h1> 
-            </div>
-        </nav>
-    
-        <main>
-            <div class="container container-center">
-                <textarea id="translation-input" placeholder="Put your message here which you want to convert to banana language"></textarea>
-            </div>
-    
-            <div class="container container-center">
-                <button id="translation-button">
-                    Translate to Banana
-                </button>
-            </div>
-            
-            <div class="container container-center">
-                Translation will come here 👇
-            </div>
-    
-            <div class="container container-center">
-                <textarea id="translated-output">
-                    
-                </textarea>
-            </div>
-    
-        </main>
+    <div class="header">
+        <h1>Talk in Minionese</h1>
+    </div>
+    <div class="container-center">
+        <div class="input-section">
+            <h1>English Text</h1>
+            <textarea id="txt-input" placeholder="Put your sentence in english and we will convert it into banana language"></textarea>
+        </div>
+        <button id="btn-translate" class="btn">Translate to Banana</button>
+        <div class="output-section">
+            <h1>Translated Text</h1>
+            <div id="output"></div> 
+        </div>
     </div>
     
-    
+    <footer class="footer">
+        <div class="footer-header">Developed with ❤️ by Sunil Ballani</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" target="_blank" href=""><img src="./assets/github.png" alt="Github logo" class="logoImg"></a></li>
+            <li class="list-item-inline"><a class="link" target="_blank" href=""><img src="./assets/twitter1.png" alt="Twitter logo" class="logoImg"></a></li>
+            <li class="list-item-inline"><a class="link" target="_blank" href=""><img src="./assets/linkedin.png" alt="Linkedin logo" class="logoImg"></a></li>
+        </ul>
+    </footer>
 
-    <script src="app.js"></script>
+    <script src="app.js" type="text/javascript"> </script>
 </body>
 </html>

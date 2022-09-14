@@ -1,67 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+:root{
+    --primary-color: #1E3A8A;
+    --dark: #000000;
+    --gray: #757575;
+}
 *{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
-    box-sizing: border-box;
-}
+    margin : 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
 
+}
 body{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(
-        to right,
-        #FFE167 0%,
-        #FFE167 50%,
-        #1F2123 50%,
-        #1F2123 100%
-    );
-    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--coolGray);
+    margin: 0px;
+    background-image: url(./assets/minion1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #FDE34D;
 }
-
-.main-container{
-    color: black;
-    margin-top: 3rem !important;
-    max-width: 60rem;
-    min-height: 40rem;
-    margin: auto;
-    background-color: white;
-    z-index: 2;
-}
-
-#translation-button{
-    border: none;
-    margin: 1rem 0rem;
-    padding: 1rem 2rem;
-    background-color: #FFE167;
-    /* color: white; */
-    border-radius: 2rem;
-    font-size: large;
-}
-
-.container{
-    padding: 1rem 2rem;
-}
-
-nav{
+.header, .footer{
+    /* background-color: var(--primary-color); */
     text-align: center;
-    margin: 1rem 0rem;
 }
-
+.header h1{
+    font-size: 3rem; 
+    padding: 1rem;
+    margin: 0;
+    color: var(--primary-color);
+}
 .container-center{
-   max-width: 600px;
-   margin: auto; 
+    max-width: 600px;
+    margin: auto;
+    padding: 0 2rem;
 }
-
-textarea{
+.btn{
+    display: block;
+    background-color: var(--primary-color);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    padding: 16px 32px;
+    margin: 16px auto;
+    text-decoration: none;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.input-section{
+    box-sizing: border-box;
     display: block;
     width: 100%;
     min-height: 20vh;
     margin-top: 2rem;
+    font-size: small;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+.input-section h1{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding-top: 0.7rem;
+    text-align: center;
+}
+textarea{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    resize: none;
+    min-height: 20vh;
+    font-size: 1.2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+textarea:focus{
+    outline: none;
+}
+.output-section{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+.output-section h1{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding-top: 0.7rem;
+    text-align: center;
 }
 
-#translated-output{
-    margin-top: 0rem;
-    min-height: 10vh;
-    overflow: scroll;
+#output{
+    height: 20vh; 
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 4rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.footer-header{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+a{
+    color: #781ede;
+    text-decoration: none;
+}
+.footer{
+    margin-top: 6rem;
+    padding: 0rem 0rem 0.1rem 0;
+}
+.list-non-bullet{
+    list-style: none;
+    padding: 0;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem ;
+}
+.logoImg{
+    height: 40px;
+    width: 40px;
 }
