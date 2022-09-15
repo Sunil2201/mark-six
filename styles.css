@@ -2,8 +2,7 @@
 
 :root{
     --primary-color: #1E3A8A;
-    --dark: #000000;
-    --gray: #757575;
+    --secondary-color: #781ede;
 }
 *{
     margin : 0;
@@ -13,7 +12,6 @@
 }
 body{
     font-family: 'IBM Plex Sans', sans-serif;
-    color: var(--coolGray);
     margin: 0px;
     background-image: url(./assets/minion1.png);
     background-repeat: no-repeat;
@@ -106,11 +104,16 @@ textarea:focus{
     border-radius: 0.5rem;
 }
 .footer-header{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
+    color: white;
+    font-weight: 600;
+}
+span{
+    color: var(--secondary-color);
 }
 a{
-    color: #781ede;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 .footer{
@@ -124,8 +127,4 @@ a{
 .list-item-inline{
     display: inline;
     padding: 0rem 0.5rem ;
-}
-.logoImg{
-    height: 40px;
-    width: 40px;
 }
